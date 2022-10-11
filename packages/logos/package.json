@@ -1,0 +1,27 @@
+{
+  "name": "@relucent/logos",
+  "version": "2.0.0",
+  "description": "Logo assets for Relucent, Relucent Ltd",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Relucent-Software/business.git"
+  },
+  "keywords": [
+    "relucent",
+    "logos",
+    "branding"
+  ],
+  "author": "Dom Webber <dom.webber@hotmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Relucent-Software/business/issues"
+  },
+  "homepage": "https://github.com/Relucent-Software/business#readme",
+  "files": [
+    "dist/*"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "private": "true",
+  "author": "Dom  Webber <dom.webber@hotmail.com>",
+  "homepage": "https://relucent.dev",
+  "workspaces": [
+    "packages/*"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "npm-run-all test:*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Relucent-Software/business.git"
+  },
+  "keywords": [
+    "relucent",
+    "logos",
+    "branding"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Relucent-Software/business/issues"
+  }
+}

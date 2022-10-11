@@ -10,11 +10,15 @@ This project incorporates material and code from third parties.
 Example License (c) ACME Inc.
 ```
 
-## @relucent-software/press
+## Futura PT Bold
 
-**Source**: <https://github.com/Relucent-Software/press>
+**Source**: <https://www.paratype.com/>
 
-```txt
-Proprietary
-Copyright (c) 2022 Relucent Ltd
-```
+- Individually licensed
+- Also available under <https://www.adobe.com/go/adobe-fonts-terms>
+
+## Freeject.net Backgrounds
+
+**Source**: <https://www.freeject.net/>
+
+**License**: [https://www.freeject.net/p/lisen.html (web.archive)](https://web.archive.org/web/20210309000755/https://www.freeject.net/p/lisen.html)

@@ -1,0 +1,4 @@
+assets/
+**/*.fig
+applications/
+qr-codes/
