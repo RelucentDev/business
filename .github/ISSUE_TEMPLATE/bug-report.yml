@@ -1,0 +1,44 @@
+name: "Bug Report 🐛"
+description: "Report errors or unexpected behaviour"
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: textarea
+    attributes:
+      label: Expected Behaviour
+      description: Feel free to paste screenshots into the editor.
+      placeholder: What were you expecting?
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: Actual Behaviour
+      placeholder: What happened instead?
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Behaviour Context
+      description: What steps can we take to reproduce the issue? What system are you running? What software could be interfering?
+      placeholder: |
+        1. In this environment...
+        2. With this config...
+        3. Run/Do '...'
+        4. See error...
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: Relevant Log Outputs
+      description: Please copy and paste and relevant log output(s). This will automatically be formatted into code, so no need for backticks.
+      render: bash
+  - type: checkboxes
+    attributes:
+      label: Contributing Guidelines & Code of Conduct
+      description: By submitting this issue, you agree to follow our [Contributing Guidelines & Code of Conduct](/CONTRIBUTING.md)
+      options:
+        - label: I have read this project's Contributing Guidelines & Code of Conduct
+          required: true
