@@ -27,14 +27,21 @@ from early testing to general availability.
 - **generally available**: *Generally available to all customers*. Ready for
   production use.
 
-## Installation
+## Packages
+
+This repository also contains a number of brand and business-related packages.
+Some of the packages in this repository may not be publically published to a
+package repository, however, you are more than welcome to use them from this
+repository.
+
+### Installation
 
 Instructions and details on how to install the library/project including
 bash/code snippets and config needed to get the software running. When
 installation instructions are length a separate file (INSTALL.md) should be
 used and linked to in this section.
 
-## Usage
+### Usage
 
 Basic system usage e.g. starting the server, stopping the server, etc.
 
