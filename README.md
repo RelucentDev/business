@@ -40,13 +40,25 @@ Add the following to a ```.npmrc``` file.
 
 ```txt
 @relucent-software:registry=https://npm.pkg.github.com
-//npm.pkg.github.com/relucent-software/press:_authToken=${GITHUB_TOKEN}
+//npm.pkg.github.com/relucent-software:_authToken=${GITHUB_TOKEN}
 ```
 
 #### Logos - @relucent-software/logos
 
 ```bash
 npm install @relucent-software/logos
+```
+
+#### Colors - @relucent-software/colors
+
+```bash
+npm install @relucent-software/colors
+```
+
+#### TailwindCSS Preset - @relucent-software/tailwindcss-preset
+
+```bash
+npm install @relucent-software/tailwindcss-preset
 ```
 
 ### Usage
