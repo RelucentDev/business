@@ -3,7 +3,7 @@
   "author": "Dom  Webber <dom.webber@hotmail.com>",
   "homepage": "https://relucent.dev",
   "workspaces": [
-    "packages/*"
+    "packages/logos"
   ],
   "main": "index.js",
   "scripts": {
