@@ -36,10 +36,18 @@ repository.
 
 ### Installation
 
-Instructions and details on how to install the library/project including
-bash/code snippets and config needed to get the software running. When
-installation instructions are length a separate file (INSTALL.md) should be
-used and linked to in this section.
+Add the following to a ```.npmrc``` file.
+
+```txt
+@relucent-software:registry=https://npm.pkg.github.com
+//npm.pkg.github.com/relucent-software/press:_authToken=${GITHUB_TOKEN}
+```
+
+#### Logos - @relucent-software/logos
+
+```bash
+npm install @relucent-software/logos
+```
 
 ### Usage
 
