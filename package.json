@@ -3,8 +3,8 @@
   "author": "Dom  Webber <dom.webber@hotmail.com>",
   "homepage": "https://relucent.dev",
   "workspaces": [
-    "./packages/logos",
-    "./packages/tailwindcss-preset",
+    "packages\\logos",
+    "packages\\tailwindcss-preset",
     "packages\\colors"
   ],
   "main": "index.js",
