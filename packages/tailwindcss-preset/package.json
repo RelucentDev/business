@@ -1,7 +1,7 @@
 {
-  "name": "@relucent-software/logos",
+  "name": "@relucent-software/tailwindcss-preset",
   "version": "0.1.0",
-  "description": "Logo assets for Relucent, Relucent Ltd",
+  "description": "Relucent branding TailwindCSS preset",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,8 +12,9 @@
   },
   "keywords": [
     "relucent",
-    "logos",
-    "branding"
+    "branding",
+    "tailwind",
+    "tailwindcss"
   ],
   "author": "Dom Webber <dom.webber@hotmail.com>",
   "license": "ISC",
@@ -21,7 +22,9 @@
     "url": "https://github.com/Relucent-Software/business/issues"
   },
   "homepage": "https://github.com/Relucent-Software/business#readme",
-  "files": [
-    "dist/*"
-  ]
+  "dependencies": {
+    "@relucent-software/colors": "^0.1.0",
+    "@tailwindcss/typography": "^0.5.7",
+    "tailwindcss": "^3.1.8"
+  }
 }

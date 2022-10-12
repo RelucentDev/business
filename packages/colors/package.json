@@ -1,7 +1,7 @@
 {
-  "name": "@relucent-software/logos",
+  "name": "@relucent-software/colors",
   "version": "0.1.0",
-  "description": "Logo assets for Relucent, Relucent Ltd",
+  "description": "Relucent branding colors",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,8 +12,9 @@
   },
   "keywords": [
     "relucent",
-    "logos",
-    "branding"
+    "branding",
+    "colors",
+    "colours"
   ],
   "author": "Dom Webber <dom.webber@hotmail.com>",
   "license": "ISC",
@@ -21,7 +22,7 @@
     "url": "https://github.com/Relucent-Software/business/issues"
   },
   "homepage": "https://github.com/Relucent-Software/business#readme",
-  "files": [
-    "dist/*"
-  ]
+  "dependencies": {
+    "chroma-js": "^2.4.2"
+  }
 }
