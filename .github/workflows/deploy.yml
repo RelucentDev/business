@@ -16,7 +16,9 @@ jobs:
           registry-url: 'https://npm.pkg.github.com'
           scope: '@relucent-software'
       - run: npm ci
+      - run: npx lerna bootstrap
+      - run: npx lerna test
       - run: npx lerna run build
-      - run: npx lerna publish --no-private --yes
+      - run: npx lerna publish from-git --no-private --yes
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
