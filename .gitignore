@@ -1,3 +1,4 @@
 tmp/
 *.zip
 node_modules/
+lerna-debug.log
