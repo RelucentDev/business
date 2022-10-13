@@ -1,6 +1,6 @@
 {
   "name": "@relucent-software/tailwindcss-preset",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "Relucent branding TailwindCSS preset",
   "main": "dist/index.js",
   "scripts": {

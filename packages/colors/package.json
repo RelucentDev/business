@@ -1,6 +1,6 @@
 {
   "name": "@relucent-software/colors",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "Relucent branding colors",
   "main": "dist/index.js",
   "types": "dist/src/index.d.ts",
