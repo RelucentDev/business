@@ -7,12 +7,17 @@
  * @since     1.0.0
  */
 
-const chroma = require('chroma-js');
+import * as chroma from 'chroma-js';
 
 const colorSamplePoints = [50, 100, 200, 300, 400, 500, 600, 700, 800, 900];
 
-function scaleToSamplePoints(scale, samplePoints) {
-  const samples = {};
+function scaleToSamplePoints(
+  scale: chroma.Scale,
+  samplePoints: number[]
+) {
+  const samples: {
+    [key: string]: string
+  } = {};
 
   samplePoints.forEach(
     (samplePoint) => {
@@ -23,7 +28,9 @@ function scaleToSamplePoints(scale, samplePoints) {
   return samples;
 }
 
-function upDownScaleColor(color) {
+function upDownScaleColor(
+  color: string | number | chroma.Color
+) {
   const colorChroma = chroma(color);
   return [
     colorChroma.darken(4),
@@ -31,17 +38,6 @@ function upDownScaleColor(color) {
     colorChroma.brighten(5),
   ];
 }
-
-const blueScale = chroma.scale([
-  '#000000',
-  '#3083DC',
-  '#FFFFFF',
-])
-.domain([
-  0,
-  500,
-  1000,
-]);
 
 const defaultDomain = [
   1000,
@@ -71,9 +67,6 @@ const functionalScales = {
     0,
   ]),
 };
-
-const blueSamples = scaleToSamplePoints(blueScale, colorSamplePoints);
-blueSamples.DEFAULT = blueSamples[500];
 
 const colors = {
   blue: {
@@ -128,7 +121,7 @@ const palettes = {
   },
 };
 
-module.exports = colors;
-module.exports = Object.assign(module.exports, {
-  palettes,
-});
+export default colors;
+export {
+  palettes
+};
