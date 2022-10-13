@@ -22,3 +22,12 @@ Example License (c) ACME Inc.
 **Source**: <https://www.freeject.net/>
 
 **License**: [https://www.freeject.net/p/lisen.html (web.archive)](https://web.archive.org/web/20210309000755/https://www.freeject.net/p/lisen.html)
+
+## Chroma JS
+
+**Source**: <https://github.com/gka/chroma.js>
+
+```txt
+chroma.js - JavaScript library for color conversions
+Copyright (c) 2011-2019, Gregor Aisch
+```
