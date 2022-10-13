@@ -11,30 +11,18 @@ fs.emptyDirSync(outDir);
 
 const outputMapping = {
   'png': {
-    fileName: (fileName, currentOption) => `${outDir}/${fileName}${currentOption}.png`,
+    fileName: (fileName) => `${outDir}/${fileName}.png`,
     options: {
-      '': {
-
-      },
-      /*'@2x': {
-
-      },*/
     },
   },
   'gif': {
-    fileName: (fileName, currentOption) => `${outDir}/${fileName}${currentOption}.gif`,
+    fileName: (fileName) => `${outDir}/${fileName}.gif`,
     options: {
-      '': {
-
-      }
     },
   },
   'webp': {
-    fileName: (fileName, currentOption) => `${outDir}/${fileName}${currentOption}.webp`,
+    fileName: (fileName) => `${outDir}/${fileName}.webp`,
     options: {
-      '': {
-
-      },
     },
   },
   // No JPEG due to lack of transparency
@@ -64,23 +52,16 @@ fs.readdirSync(srcDir).forEach(
         (outputFormat) => {
           const outputConfig = outputMapping[outputFormat];
 
-          Object.keys(outputConfig.options)
-            .forEach(
-              (formatOption) => {
-                const formatOptionOptions = outputConfig.options[formatOption];
-
-                sharpProcessedFile
-                  .toFormat(
-                    outputFormat,
-                    formatOptionOptions
-                  )
-                  .toFile(
-                    outputConfig.fileName(unclarifiedFilename, formatOption)
-                  )
-                  .catch(
-                    (err) => console.error(err),
-                  );
-              }
+          sharpProcessedFile
+            .toFormat(
+              outputFormat,
+              outputConfig.options
+            )
+            .toFile(
+              outputConfig.fileName(unclarifiedFilename)
+            )
+            .catch(
+              (err) => console.error(err),
             );
         }
       )
