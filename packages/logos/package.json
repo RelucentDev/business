@@ -1,6 +1,6 @@
 {
   "name": "@relucent-software/logos",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Logo assets for Relucent, Relucent Ltd",
   "main": "index.js",
   "scripts": {
