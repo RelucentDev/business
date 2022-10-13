@@ -4,8 +4,8 @@
   "homepage": "https://relucent.dev",
   "workspaces": [
     "packages\\logos",
-    "packages\\tailwindcss-preset",
-    "packages\\colors"
+    "packages\\colors",
+    "packages\\tailwindcss-preset"
   ],
   "main": "index.js",
   "scripts": {
