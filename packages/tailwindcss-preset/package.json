@@ -1,6 +1,6 @@
 {
   "name": "@relucent-software/tailwindcss-preset",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "description": "Relucent branding TailwindCSS preset",
   "main": "dist/index.js",
   "scripts": {
@@ -10,7 +10,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Relucent-Software/business.git"
+    "url": "git+https://github.com/Relucent-Software/business.git",
+    "directory": "packages/tailwindcss-preset"
   },
   "keywords": [
     "relucent",
@@ -25,7 +26,7 @@
   },
   "homepage": "https://github.com/Relucent-Software/business#readme",
   "dependencies": {
-    "@relucent-software/colors": "^1.0.2",
+    "@relucent-software/colors": "^1.0.0",
     "@tailwindcss/typography": "^0.5.7",
     "tailwindcss": "^3.1.8"
   },

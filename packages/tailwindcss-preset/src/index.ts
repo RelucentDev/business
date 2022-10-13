@@ -29,3 +29,4 @@ const tailwindPreset = {
 };
 
 export default tailwindPreset;
+console.log(tailwindPreset);
