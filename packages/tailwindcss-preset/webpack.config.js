@@ -1,9 +1,10 @@
 const path = require('path');
 
-module.exports = {
-  mode: process.env.NODE_ENV || 'production',
+module.exports = (env) => ({
+  mode: env.production ? 'production' : 'development',
+  target: 'node',
   entry: './src/index.ts',
-  devtool: 'source-map',
+  devtool: env.production ? 'inline-source-map' : 'eval',
   module: {
     rules: [
       {
@@ -19,8 +20,10 @@ module.exports = {
   output: {
     filename: 'index.js',
     path: path.resolve(__dirname, 'dist'),
+    clean: true,
+    library: 'tailwindcssPreset',
   },
   optimization: {
     usedExports: true,
   },
-};
+});

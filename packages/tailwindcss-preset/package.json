@@ -1,8 +1,8 @@
 {
   "name": "@relucent-software/tailwindcss-preset",
-  "version": "1.0.14",
+  "version": "1.0.16",
   "description": "Relucent branding TailwindCSS preset",
-  "main": "dist/index.js",
+  "module": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
