@@ -1,11 +1,13 @@
-# `logos`
+# `@relucent-software/logos`
 
-> TODO: description
+Relucent logo assets.
 
 ## Usage
 
-```
-const logos = require('logos');
+```js
+const logos = require('@relucent-software/logos');
 
-// TODO: DEMONSTRATE API
+// or (with NextJS for example)
+
+import svgImage from '@relucent-software/logos/dist/relucent-logo-black.svg';
 ```

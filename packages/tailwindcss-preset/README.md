@@ -1,11 +1,22 @@
-# `tailwindcss-preset`
+# `@relucent-software/tailwindcss-preset`
 
-> TODO: description
+Relucent's branded TailwindCSS Preset.
+
+This preset includes all of the branding colours used throughout applications
+and websites that follow the Relucent brand.
 
 ## Usage
 
-```
-const tailwindcssPreset = require('tailwindcss-preset');
+In your tailwind config file:
 
-// TODO: DEMONSTRATE API
+```js
+const tailwindcssPreset = require('@relucent-software/tailwindcss-preset');
+
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  presets: [
+    tailwindcssPreset,
+  ],
+  // ...
+};
 ```

@@ -1,11 +1,13 @@
-# `color`
+# `@relucent-software/colors`
 
-> TODO: description
+Definitions and calculations for Relucent brand colouring and colour schemes.
 
 ## Usage
 
-```
-const color = require('color');
+```js
+const color = require('@relucent-software/colors');
 
-// TODO: DEMONSTRATE API
+// or
+
+import color, { palettes } from '@relucent-software/colors';
 ```
