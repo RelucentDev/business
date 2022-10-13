@@ -31,3 +31,21 @@ Example License (c) ACME Inc.
 chroma.js - JavaScript library for color conversions
 Copyright (c) 2011-2019, Gregor Aisch
 ```
+
+## Tailwind CSS
+
+**Source**: <https://github.com/tailwindlabs/tailwindcss>
+
+```txt
+MIT License
+Copyright (c) Tailwind Labs, Inc.
+```
+
+## Tailwind CSS Typography
+
+**Source**: <https://github.com/tailwindlabs/tailwindcss-typography>
+
+```txt
+MIT License
+Copyright (c) Tailwind Labs, Inc.
+```
