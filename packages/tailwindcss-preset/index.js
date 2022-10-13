@@ -1,5 +1,5 @@
 const colors = require('@relucent-software/colors');
-const { palettes } = require('relucent-software/colors');
+const { palettes } = require('@relucent-software/colors');
 const defaultTheme = require('tailwindcss/defaultTheme');
 
 const tailwindPreset = {
