@@ -1,11 +1,11 @@
 {
   "name": "@relucent-software/colors",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Relucent branding colors",
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
+    "build": "webpack --progress",
     "prepublish": "build"
   },
   "repository": {

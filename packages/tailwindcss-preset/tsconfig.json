@@ -6,6 +6,7 @@
         "target": "ESNext",
         "allowJs": true,
         "moduleResolution": "Node",
+        "allowSyntheticDefaultImports": true,
         "sourceMap": true,
         "declaration": true
     }
