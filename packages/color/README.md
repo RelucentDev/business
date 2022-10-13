@@ -1,11 +1,11 @@
-# `logos`
+# `color`
 
 > TODO: description
 
 ## Usage
 
 ```
-const logos = require('logos');
+const color = require('color');
 
 // TODO: DEMONSTRATE API
 ```

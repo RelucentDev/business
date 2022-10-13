@@ -1,0 +1,32 @@
+{
+  "name": "@relucent-software/tailwindcss-preset",
+  "version": "1.0.16",
+  "description": "Relucent branding TailwindCSS preset",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Relucent-Software/business.git",
+    "directory": "packages/tailwindcss-preset"
+  },
+  "keywords": [
+    "relucent",
+    "branding",
+    "tailwind",
+    "tailwindcss"
+  ],
+  "author": "Dom Webber <dom.webber@hotmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Relucent-Software/business/issues"
+  },
+  "homepage": "https://github.com/Relucent-Software/business#readme",
+  "dependencies": {
+    "@relucent-software/colors": "*",
+    "@tailwindcss/typography": "^0.5.7",
+    "tailwindcss": "^3.1.8"
+  }
+}

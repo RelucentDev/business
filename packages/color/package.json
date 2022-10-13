@@ -1,17 +1,18 @@
 {
-  "name": "@relucent-software/tailwindcss-preset",
+  "name": "@relucent-software/colors",
   "version": "1.0.17",
-  "description": "Relucent Branding TailwindCSS Preset",
+  "description": "Relucent branding colors",
   "keywords": [
     "relucent",
     "branding",
-    "tailwind",
-    "tailwindcss"
+    "colors",
+    "colours"
   ],
   "author": "Dom Webber <dom.webber@hotmail.com>",
   "homepage": "https://github.com/Relucent-Software/business",
   "license": "ISC",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "directories": {
     "dist": "dist",
     "test": "__tests__"
@@ -24,16 +25,19 @@
     "url": "git+https://github.com/Relucent-Software/business.git"
   },
   "scripts": {
-    "test": "node ./__tests__/tailwindcss-preset.test.js",
+    "test": "node ./__tests__/color.test.js",
     "build": "webpack"
   },
   "bugs": {
     "url": "https://github.com/Relucent-Software/business/issues"
   },
-  "dependencies": {
-    "@relucent-software/colors": "*"
+  "publishConfig": {
+    "access": "public"
   },
-  "peerDependencies": {
-    "tailwindcss": "*"
+  "dependencies": {
+    "chroma-js": "^2.4.2"
+  },
+  "devDependencies": {
+    "@types/chroma-js": "*"
   }
 }
