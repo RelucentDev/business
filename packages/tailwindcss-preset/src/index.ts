@@ -1,6 +1,6 @@
-const colors = require('@relucent-software/colors');
-const { palettes } = require('@relucent-software/colors');
-const defaultTheme = require('tailwindcss/defaultTheme');
+import colors, { palettes } from '@relucent-software/colors';
+import defaultTheme from 'tailwindcss/defaultTheme';
+import typography from '@tailwindcss/typography';
 
 const tailwindPreset = {
   theme: {
@@ -28,8 +28,8 @@ const tailwindPreset = {
     },
   },
   plugins: [
-    require('@tailwindcss/typography'),
+    typography,
   ],
 };
 
-module.exports = tailwindPreset;
+export default tailwindPreset;
