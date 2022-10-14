@@ -13,7 +13,7 @@ const tailwindPreset = {
         ...defaultTheme.fontFamily.sans,
       ],
       display: [
-        '"FuturaPTWebBold", sans-serif',
+        '"FuturaPTWeb", sans-serif',
         '"Arial", sans-serif',
         ...defaultTheme.fontFamily.sans,
       ],
