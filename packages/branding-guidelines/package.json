@@ -1,6 +1,6 @@
 {
   "name": "branding-guidelines",
-  "version": "1.1.9",
+  "version": "1.1.10",
   "description": "Relucent branding guidelines",
   "keywords": [
     "relucent",
@@ -31,7 +31,7 @@
     "url": "https://github.com/Relucent-Software/business/issues"
   },
   "dependencies": {
-    "@relucent-software/colors": "^1.1.9",
+    "@relucent-software/colors": "^1.1.10",
     "color-contrast-checker": "^2.1.0"
   },
   "devDependencies": {
