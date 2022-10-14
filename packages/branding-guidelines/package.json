@@ -1,6 +1,7 @@
 {
   "name": "branding-guidelines",
   "version": "1.1.10",
+  "private": true,
   "description": "Relucent branding guidelines",
   "keywords": [
     "relucent",
