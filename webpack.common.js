@@ -1,6 +1,5 @@
 module.exports = (env) => ({
   mode: env.production ? 'production' : 'development',
-  target: 'node',
   devtool: env.production ? 'inline-source-map' : 'eval',
   module: {
     rules: [

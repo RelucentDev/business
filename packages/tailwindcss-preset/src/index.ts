@@ -9,11 +9,11 @@ const tailwindPreset = {
         ...defaultTheme.fontFamily.serif,
       ],
       sans: [
-        '"Oxygen", sans-serif',
+        '"Source Sans Pro", sans-serif',
         ...defaultTheme.fontFamily.sans,
       ],
       display: [
-        '"FuturaPTWeb", sans-serif',
+        '"Montserrat", sans-serif',
         '"Arial", sans-serif',
         ...defaultTheme.fontFamily.sans,
       ],

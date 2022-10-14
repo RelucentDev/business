@@ -72,7 +72,7 @@ const functionalScales = {
 const colors = {
     blue: {
         ...scaleToSamplePoints(functionalScales.blue, colorSamplePoints),
-        DEFAULT: functionalScales.blue(500).hex(),
+        DEFAULT: functionalScales.blue(700).hex(),
     },
     purple: {
         ...scaleToSamplePoints(functionalScales.purple, colorSamplePoints),
