@@ -1,9 +1,11 @@
 {
     "compilerOptions": {
-        "module": "NodeNext",
+        "module": "ESNext",
         "declaration": true,
         "noImplicitAny": false,
         "removeComments": true,
+        "allowSyntheticDefaultImports": true,
+        "moduleResolution": "Node",
         "noLib": false,
         "target": "ESNext",
         "sourceMap": true,

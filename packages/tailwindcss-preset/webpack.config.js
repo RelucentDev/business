@@ -10,9 +10,9 @@ module.exports = (env) => merge(
       filename: 'index.js',
       path: path.resolve(__dirname, 'dist'),
       clean: true,
-      library: {
-        type: 'commonjs-static',
-      },
+      library: 'tailwindcssPreset',
+      umdNamedDefine: true,
+      libraryTarget: 'umd',
     },
   }
 );

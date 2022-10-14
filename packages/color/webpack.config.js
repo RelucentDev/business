@@ -10,9 +10,9 @@ module.exports = (env) => merge(
       filename: 'index.js',
       path: path.resolve(__dirname, 'dist'),
       clean: true,
-      library: {
-        type: 'commonjs-static',
-      },
+      library: 'colors',
+      umdNamedDefine: true,
+      libraryTarget: 'umd',
     },
   }
 );
