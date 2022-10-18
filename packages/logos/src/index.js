@@ -50,14 +50,18 @@ fs.readdirSync(srcDir).forEach(
       .forEach(
         (outputFormat) => {
           const outputConfig = outputMapping[outputFormat];
+          const calculatedFilename = outputConfig.fileName(unclarifiedFilename);
 
           sharpProcessedFile
             .toFormat(
               outputFormat,
               outputConfig.options
             )
-            .toFile(
-              outputConfig.fileName(unclarifiedFilename)
+            .toFile(calculatedFilename)
+            .then(
+              () => {
+                console.info(`Saved: "${calculatedFilename}"`);
+              }
             )
             .catch(
               (err) => console.error(err),
