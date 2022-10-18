@@ -27,10 +27,6 @@ from early testing to general availability.
 - **generally available**: *Generally available to all customers*. Ready for
   production use.
 
-## Press Kit
-
-For logo assets see [packages/logos/dist](./packages/logos/dist/).
-
 ## Packages
 
 This repository also contains a number of brand and business-related packages.
@@ -47,7 +43,7 @@ Add the following to a ```.npmrc``` file.
 //npm.pkg.github.com/relucent-software:_authToken=${GITHUB_TOKEN}
 ```
 
-#### Logos - @relucent-software/logos (private)
+#### Logos - @relucent-software/logos
 
 ```bash
 npm install @relucent-software/logos
