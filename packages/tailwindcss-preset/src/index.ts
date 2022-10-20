@@ -6,7 +6,7 @@ const tailwindPreset = {
     fontFamily: {
       serif: [
         '"Lora", serif',
-        '"Georgia, serif',
+        '"Georgia", serif',
         ...defaultTheme.fontFamily.serif,
       ],
       sans: [
