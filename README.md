@@ -63,7 +63,17 @@ npm install @relucent-software/tailwindcss-preset
 
 ### Usage
 
-Basic system usage e.g. starting the server, stopping the server, etc.
+**Build all packages**:
+
+```bash
+npx lerna run build
+```
+
+**Version packages**:
+
+```bash
+npx lerna version
+```
 
 ## License
 
