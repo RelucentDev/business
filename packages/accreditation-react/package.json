@@ -28,7 +28,7 @@
     "url": "git+https://github.com/Relucent-Software/business.git"
   },
   "scripts": {
-    "build": "webpack"
+    "build": "tsc && webpack"
   },
   "bugs": {
     "url": "https://github.com/Relucent-Software/business/issues"
