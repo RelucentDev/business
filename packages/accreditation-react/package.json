@@ -11,13 +11,14 @@
   "author": "Dom Webber <dom.webber@hotmail.com>",
   "homepage": "https://github.com/Relucent-Software/business",
   "license": "ISC",
-  "main": "src/index.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "directories": {
-    "lib": "lib",
+    "dist": "dist",
     "test": "__tests__"
   },
   "files": [
-    "lib"
+    "dist"
   ],
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
