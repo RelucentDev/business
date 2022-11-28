@@ -6,11 +6,15 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = (env) => merge(
   common(env),
   {
-    target: 'web',
+    target: 'node',
     entry: './src/index.tsx',
     output: {
       filename: 'index.js',
       path: path.resolve(__dirname, 'dist'),
+      clean: true,
+      library: 'colors',
+      umdNamedDefine: true,
+      libraryTarget: 'umd',
     },
     module: {
       rules: [
@@ -20,12 +24,6 @@ module.exports = (env) => merge(
           exclude: /node_modules/,
         }
       ],
-    },
-    plugins: [new HtmlWebpackPlugin()],
-    devServer: {
-      static: path.join(__dirname, 'dist'),
-      compress: true,
-      port: 4000,
-    },
+    }
   },
 );
