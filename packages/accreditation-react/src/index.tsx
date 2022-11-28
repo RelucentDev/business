@@ -36,6 +36,6 @@ export default function Accreditation({ capitalise = true, linkComponent, ...add
     }
 
     return (
-        <div {...additionalProps}>{capitalise ? "Built" : "built"} with ❤️ by {linkComponent({ href: "https://relucent.dev", children: "Relucent" })}</div>
+        <div {...additionalProps}>{capitalise ? "Built" : "built"} with ❤️ by <linkComponent href="https://relucent.dev">Relucent</linkComponent></div>
     );
 }
