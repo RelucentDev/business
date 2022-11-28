@@ -77,6 +77,12 @@ npx lerna run build
 npx lerna version
 ```
 
+**Publish packages**:
+
+```bash
+# This will be done in a CI environment
+```
+
 ## License
 
 Proprietary &copy; 2022 Relucent Ltd.
