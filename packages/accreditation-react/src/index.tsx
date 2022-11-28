@@ -34,11 +34,10 @@ export default function Accreditation({ linkComponent, ...additionalProps }: Acc
         );
     }
 
-    const creditText = "Made with ❤️ by ";
-
     return (
         <div {...additionalProps}>
-            {creditText}
+            Made with ❤️ by
+            {" "}
             <linkComponent href="https://relucent.dev">Relucent</linkComponent>
         </div>
     );
