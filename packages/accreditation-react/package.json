@@ -1,0 +1,45 @@
+{
+  "name": "@relucent-software/accreditation-react",
+  "version": "1.1.16",
+  "description": "Relucent Accreditation Display for Client Websites",
+  "keywords": [
+    "relucent",
+    "credit",
+    "accreditation",
+    "creator"
+  ],
+  "author": "Dom Webber <dom.webber@hotmail.com>",
+  "homepage": "https://github.com/Relucent-Software/business",
+  "license": "ISC",
+  "main": "src/index.ts",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Relucent-Software/business.git"
+  },
+  "scripts": {
+    "build": "webpack"
+  },
+  "bugs": {
+    "url": "https://github.com/Relucent-Software/business/issues"
+  },
+  "peerDependencies": {
+    "react": "*"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.5",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-react": "^7.18.6",
+    "@babel/preset-typescript": "^7.18.6",
+    "babel-loader": "^9.1.0"
+  }
+}

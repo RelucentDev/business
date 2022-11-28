@@ -1,0 +1,15 @@
+{
+    "extends": "../../tsconfig.json",
+    "compilerOptions": {
+        "declaration": false,
+        "outDir": "./dist",
+        "lib": [
+            "DOM",
+            "ESNext"
+        ],
+        "jsx": "preserve"
+    },
+    "include": [
+        "./src"
+    ]
+}

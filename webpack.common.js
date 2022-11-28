@@ -1,17 +1,8 @@
 module.exports = (env) => ({
   mode: env.production ? 'production' : 'development',
   devtool: env.production ? 'inline-source-map' : 'eval',
-  module: {
-    rules: [
-      {
-        test: /\.tsx?$/,
-        use: 'ts-loader',
-        exclude: /node_modules/,
-      },
-    ],
-  },
   resolve: {
-    extensions: ['.tsx', '.ts', '.js'],
+    extensions: ['.tsx', '.ts', '.jsx', '.js'],
   },
   optimization: {
     usedExports: true,

@@ -61,6 +61,8 @@ npm install @relucent-software/colors
 npm install @relucent-software/tailwindcss-preset
 ```
 
+#### React Accreditation - @relucent-software/accreditation-react (private)
+
 ### Usage
 
 **Build all packages**:

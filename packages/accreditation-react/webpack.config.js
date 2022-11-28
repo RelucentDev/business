@@ -7,7 +7,7 @@ module.exports = (env) => merge(
   common(env),
   {
     target: 'web',
-    entry: './src/index.ts',
+    entry: './src/index.tsx',
     output: {
       filename: 'index.js',
       path: path.resolve(__dirname, 'dist'),
@@ -15,14 +15,10 @@ module.exports = (env) => merge(
     module: {
       rules: [
         {
-          test: /\.css$/i,
-          use: ['style-loader', 'css-loader'],
-        },
-        {
-          test: /\.tsx?$/,
-          use: 'ts-loader',
+          test: /\.(tsx|jsx|ts|js)?$/,
+          use: "babel-loader",
           exclude: /node_modules/,
-        },
+        }
       ],
     },
     plugins: [new HtmlWebpackPlugin()],
