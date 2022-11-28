@@ -10,6 +10,7 @@
 import React, { createElement, ReactNode, HTMLAttributes } from "react";
 
 interface AccreditationProps extends HTMLAttributes<HTMLDivElement> {
+    capitalise: boolean;
     linkComponent?: ({ href, children }: { href: string, children: ReactNode }) => ReactNode;
 }
 
@@ -21,7 +22,7 @@ interface AccreditationProps extends HTMLAttributes<HTMLDivElement> {
  * @since 1.1.17
  * @author Dom Webber <dom.webber@hotmail.com>
  */
-export default function Accreditation({ linkComponent, ...additionalProps }: AccreditationProps) {
+export default function Accreditation({ capitalise = true, linkComponent, ...additionalProps }: AccreditationProps) {
     if (!linkComponent) {
         linkComponent = ({ href, children }) => (
             <a
@@ -35,6 +36,6 @@ export default function Accreditation({ linkComponent, ...additionalProps }: Acc
     }
 
     return (
-        <div {...additionalProps}>built with ❤️ by {linkComponent({ href: "https://relucent.dev", children: "Relucent" })}</div>
+        <div {...additionalProps}>{capitalise ? "Built" : "built"} with ❤️ by {linkComponent({ href: "https://relucent.dev", children: "Relucent" })}</div>
     );
 }
