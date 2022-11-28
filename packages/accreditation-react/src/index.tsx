@@ -24,11 +24,17 @@ interface AccreditationProps extends HTMLAttributes<HTMLDivElement> {
 export default function Accreditation({ linkComponent, ...additionalProps }: AccreditationProps) {
     if (!linkComponent) {
         linkComponent = ({ href, children }) => (
-            <a href={href}>{children}</a>
+            <a
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer external"
+            >
+                {children}
+            </a>
         );
     }
 
     return (
-        <div {...additionalProps}>build with ❤️ by {linkComponent({ href: "https://relucent.dev", children: "Relucent" })}</div>
+        <div {...additionalProps}>built with ❤️ by {linkComponent({ href: "https://relucent.dev", children: "Relucent" })}</div>
     );
 }
