@@ -8,7 +8,7 @@
  * @since     1.0.0
  */
 
-import React, { createElement, ReactNode, HTMLAttributes } from "react";
+import React, { ReactNode, HTMLAttributes } from "react";
 
 interface AccreditationProps extends HTMLAttributes<HTMLDivElement> {
     linkComponent?: ({ href, children }: { href: string, children: ReactNode }) => ReactNode;
