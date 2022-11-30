@@ -24,6 +24,7 @@ interface AccreditationProps extends HTMLAttributes<HTMLDivElement> {
  */
 export default function Accreditation({ linkComponent, ...additionalProps }: AccreditationProps) {
     if (!linkComponent) {
+        // Default link component
         linkComponent = ({ href, children }) => (
             <a
                 href={href}
