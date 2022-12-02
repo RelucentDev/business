@@ -11,7 +11,13 @@
 import React, { ReactNode, HTMLAttributes } from "react";
 
 interface AccreditationProps extends HTMLAttributes<HTMLDivElement> {
-    linkComponent?: ({ href, children }: { href: string, children: ReactNode }) => ReactNode;
+  linkComponent?: ({
+    href,
+    children,
+  }: {
+    href: string;
+    children: ReactNode;
+  }) => ReactNode;
 }
 
 /**
@@ -22,25 +28,23 @@ interface AccreditationProps extends HTMLAttributes<HTMLDivElement> {
  * @since 1.1.17
  * @author Dom Webber <dom.webber@hotmail.com>
  */
-export default function Accreditation({ linkComponent, ...additionalProps }: AccreditationProps) {
-    if (!linkComponent) {
-        // Default link component
-        linkComponent = ({ href, children }) => (
-            <a
-                href={href}
-                target="_blank"
-                rel="noopener noreferrer external"
-            >
-                {children}
-            </a>
-        );
-    }
-
-    return (
-        <div {...additionalProps}>
-            Made with ❤️ by
-            {" "}
-            <linkComponent href="https://relucent.dev">Relucent</linkComponent>
-        </div>
+export default function Accreditation({
+  linkComponent,
+  ...additionalProps
+}: AccreditationProps) {
+  if (!linkComponent) {
+    // Default link component
+    linkComponent = ({ href, children }) => (
+      <a href={href} target="_blank" rel="noopener noreferrer external">
+        {children}
+      </a>
     );
+  }
+
+  return (
+    <div {...additionalProps}>
+      Made with ❤️ by{" "}
+      <linkComponent href="https://relucent.dev">Relucent</linkComponent>
+    </div>
+  );
 }
