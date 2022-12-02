@@ -25,7 +25,9 @@
   },
   "scripts": {
     "test": "node ./__tests__/tailwindcss-preset.test.js",
-    "build": "webpack"
+    "build": "webpack",
+    "lint": "npm-run-all lint:*",
+    "lint:eslint": "eslint src/**/*"
   },
   "bugs": {
     "url": "https://github.com/Relucent-Software/business/issues"
@@ -38,5 +40,14 @@
   },
   "peerDependencies": {
     "tailwindcss": "*"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.45.0",
+    "@typescript-eslint/parser": "^5.45.0",
+    "eslint": "^8.28.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.8.0"
   }
 }

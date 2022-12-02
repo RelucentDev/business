@@ -17,6 +17,7 @@ jobs:
           scope: '@relucent-software'
       - run: npm ci
       - run: npx lerna bootstrap
+      - run: npx lerna run lint
       - run: npx lerna run build -- --env production
       - run: npx lerna publish from-git --no-private --yes
         env:

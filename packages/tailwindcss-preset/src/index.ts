@@ -1,5 +1,5 @@
-import colors, { palettes } from '@relucent-software/colors';
-const defaultTheme = require('tailwindcss/defaultTheme');
+import colors, { palettes } from "@relucent-software/colors";
+const defaultTheme = require("tailwindcss/defaultTheme");
 
 const tailwindPreset = {
   theme: {
@@ -27,7 +27,7 @@ const tailwindPreset = {
         ...palettes,
       },
     },
-  }
+  },
 };
 
 export default tailwindPreset;

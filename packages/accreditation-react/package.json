@@ -29,7 +29,10 @@
   },
   "scripts": {
     "build": "webpack",
-    "postbuild": "tsc"
+    "postbuild": "tsc",
+    "lint": "npm-run-all lint:*",
+    "lint:typecheck": "tsc",
+    "lint:eslint": "eslint src/**/*"
   },
   "bugs": {
     "url": "https://github.com/Relucent-Software/business/issues"
@@ -42,6 +45,14 @@
     "@babel/preset-env": "^7.20.2",
     "@babel/preset-react": "^7.18.6",
     "@babel/preset-typescript": "^7.18.6",
-    "babel-loader": "^9.1.0"
+    "@typescript-eslint/eslint-plugin": "^5.45.0",
+    "@typescript-eslint/parser": "^5.45.0",
+    "babel-loader": "^9.1.0",
+    "eslint": "^8.28.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.31.11",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.8.0"
   }
 }
