@@ -27,6 +27,15 @@ from early testing to general availability.
 - **generally available**: *Generally available to all customers*. Ready for
   production use.
 
+## Branding & Press Kit
+
+Branding and press kit - logos and cover images.
+
+- **/resources:** Design and source files - Figma branding guidelines.
+- **/packages/logos:** Raw source files - Logo files (PNG, JPEG, GIF).
+
+> See [latest release](https://github.com/Relucent-Software/business/releases/latest)
+
 ## Packages
 
 This repository also contains a number of brand and business-related packages.
