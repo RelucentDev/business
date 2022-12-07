@@ -32,15 +32,6 @@ export default function Accreditation({
   linkComponent,
   ...additionalProps
 }: AccreditationProps) {
-  if (!linkComponent) {
-    // Default link component
-    linkComponent = ({ href, children }) => (
-      <a href={href} target="_blank" rel="noopener noreferrer external">
-        {children}
-      </a>
-    );
-  }
-
   return (
     <div {...additionalProps}>
       Made with ❤️ by{" "}
