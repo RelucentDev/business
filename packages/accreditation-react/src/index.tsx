@@ -8,17 +8,20 @@
  * @since     1.0.0
  */
 
-import React, { ReactNode, HTMLAttributes } from "react";
+import React, { ElementType, ComponentPropsWithoutRef } from "react";
 
-interface AccreditationProps extends HTMLAttributes<HTMLDivElement> {
-  linkComponent?: ({
-    href,
-    children,
-  }: {
-    href: string;
-    children: ReactNode;
-  }) => ReactNode;
+interface AccreditationProps<Tag extends ElementType> {
+  link?: ElementType;
+  as?: Tag;
 }
+
+/**
+ * @see https://stackoverflow.com/a/66568474/11928183
+ */
+type AccreditationAdditionalProps<Tag extends ElementType> = Omit<
+  ComponentPropsWithoutRef<Tag>,
+  keyof AccreditationProps<Tag>
+>;
 
 /**
  * Relucent Accreditation Display.
@@ -28,14 +31,17 @@ interface AccreditationProps extends HTMLAttributes<HTMLDivElement> {
  * @since 1.1.17
  * @author Dom Webber <dom.webber@hotmail.com>
  */
-export default function Accreditation({
-  linkComponent,
-  ...additionalProps
-}: AccreditationProps) {
+export default function Accreditation<Tag extends ElementType = "div">({
+  link,
+  as,
+  ...props
+}: AccreditationProps<Tag> & AccreditationAdditionalProps<Tag>) {
+  const Component: ElementType = as || "div";
+  const LinkComponent: ElementType = link || "a";
   return (
-    <div {...additionalProps}>
+    <Component {...props}>
       Made with ❤️ by{" "}
-      <linkComponent href="https://relucent.dev">Relucent</linkComponent>
-    </div>
+      <LinkComponent href="https://relucent.dev">Relucent</LinkComponent>
+    </Component>
   );
 }
