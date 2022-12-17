@@ -1,3 +1,13 @@
+/**
+ * Relucent Logos Package.
+ *
+ * @package   Relucent\Logos
+ * @license   Proprietary
+ * @copyright 2022 Relucent Ltd
+ * @link      https://relucent.dev
+ * @since     1.0.0
+ */
+
 const path = require("path");
 const fs = require("fs-extra");
 const sharp = require("sharp");

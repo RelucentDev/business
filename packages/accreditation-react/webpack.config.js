@@ -1,3 +1,13 @@
+/**
+ * Relucent Accreditation.
+ *
+ * @package   Relucent\Accreditation\React
+ * @license   Proprietary
+ * @copyright 2022 Relucent Ltd
+ * @link      https://relucent.dev
+ * @since     1.0.0
+ */
+
 const { merge } = require('webpack-merge');
 const path = require('path');
 const common = require('../../webpack.common');

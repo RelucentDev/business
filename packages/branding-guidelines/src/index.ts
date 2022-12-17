@@ -1,3 +1,12 @@
+/**
+ * Relucent Branding Guidelines.
+ *
+ * @package   Relucent\Colors
+ * @copyright 2022 Relucent Ltd
+ * @link      https://relucent.dev
+ * @since     1.0.0
+ */
+
 import ColorContrastChecker from 'color-contrast-checker';
 import colors, { palettes } from '@relucent-software/colors';
 import './styles.css';

@@ -1,7 +1,8 @@
 /**
- * Relucent Website.
+ * Relucent TailwindCSS Preset.
  *
- * @package   Relucent\Website
+ * @package   Relucent\TailwindCSSPreset
+ * @license   Proprietary
  * @copyright 2022 Relucent Ltd
  * @link      https://relucent.dev
  * @since     1.0.0

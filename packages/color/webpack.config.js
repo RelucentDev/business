@@ -1,3 +1,12 @@
+/**
+ * Relucent Colors.
+ *
+ * @package   Relucent\Colors
+ * @copyright 2022 Relucent Ltd
+ * @link      https://relucent.dev
+ * @since     1.0.0
+ */
+
 const { merge } = require('webpack-merge');
 const path = require('path');
 const common = require('../../webpack.common');
