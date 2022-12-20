@@ -15,7 +15,7 @@ const archiver = require("archiver");
 
 const srcDir = path.resolve(__dirname);
 const outDir = path.resolve(__dirname, "..", "dist");
-const rootDir = path.resolve(__dirname, "..", "..", "..");
+const rootDir = path.resolve(__dirname, "..");
 console.log(rootDir);
 
 // Clear output directory
