@@ -1,6 +1,6 @@
 {
   "name": "@relucent-software/tailwindcss-preset",
-  "version": "1.1.40",
+  "version": "1.2.0",
   "description": "Relucent Branding TailwindCSS Preset",
   "keywords": [
     "relucent",
@@ -36,7 +36,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@relucent-software/colors": "^1.1.40"
+    "@relucent-software/colors": "^1.2.0"
   },
   "peerDependencies": {
     "tailwindcss": "*"
