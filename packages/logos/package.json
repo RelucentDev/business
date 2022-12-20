@@ -41,5 +41,8 @@
     "prettier": "^2.8.0",
     "sharp": "^0.31.1"
   },
-  "gitHead": "a4f4533c2a1fc6eb8619ba1fa355e73430f74af3"
+  "gitHead": "a4f4533c2a1fc6eb8619ba1fa355e73430f74af3",
+  "dependencies": {
+    "archiver": "^5.3.1"
+  }
 }

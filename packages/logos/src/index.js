@@ -11,6 +11,7 @@
 const path = require("path");
 const fs = require("fs-extra");
 const sharp = require("sharp");
+const archiver = require("archiver");
 
 const srcDir = path.resolve(__dirname);
 const outDir = path.resolve(__dirname, "..", "dist");
@@ -64,3 +65,17 @@ fs.readdirSync(srcDir).forEach((file) => {
       .catch((err) => console.error(err));
   });
 });
+
+// Zip Dist Files
+const output = fs.createWriteStream("dist.zip");
+const archive = archiver("zip");
+
+output.on("close", () => {
+  console.log(`${archive.pointer()} total bytes written to zip`);
+});
+
+archive.pipe(output);
+
+archive.directory(outDir, false);
+
+archive.finalize();
