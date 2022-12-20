@@ -19,6 +19,11 @@ jobs:
       - run: npx lerna bootstrap
       - run: npx lerna run lint
       - run: npx lerna run build -- --env production
+      - uses: softprops/action-gh-release@v1
+        with:
+          files: |
+            packages/logos/logos.zip
+            packages/logos/logos.tar.gz
       - run: npx lerna publish from-git --no-private --yes
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
