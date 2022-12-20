@@ -95,7 +95,7 @@ npx lerna version
 
 ## License
 
-Proprietary &copy; 2022 Relucent Ltd.
+Creative Commons &copy; 2022 Relucent Ltd.
 
 ### Contact
 
