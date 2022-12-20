@@ -15,6 +15,8 @@ const archiver = require("archiver");
 
 const srcDir = path.resolve(__dirname);
 const outDir = path.resolve(__dirname, "..", "dist");
+const rootDir = path.resolve(__dirname, "..", "..", "..");
+console.log(rootDir);
 
 // Clear output directory
 fs.emptyDirSync(outDir);
@@ -44,9 +46,11 @@ fs.readdirSync(srcDir).forEach((file) => {
   console.log(`Processing "${file}"`);
   const resolvedFilePath = `${srcDir}/${file}`;
 
-  fs.copy(resolvedFilePath, `${outDir}/${file}`).catch((err) =>
-    console.error(err)
-  );
+  fs.copy(resolvedFilePath, `${outDir}/${file}`)
+    .then(() => {
+      console.info(`Saved: "${outDir}/${file}"`);
+    })
+    .catch((err) => console.error(err));
 
   const unclarifiedFilename = file.replace(/\..*$/, "");
 
@@ -75,6 +79,10 @@ zipOutput.on("close", () => {
 
 zipArchive.pipe(zipOutput);
 zipArchive.directory(outDir, false);
+zipArchive.file(`${rootDir}/LICENSE.md`, {
+  cwd: __dirname,
+  name: "LICENSE.md",
+});
 
 // Tar Dist Files
 const tarOutput = fs.createWriteStream("logos.tar.gz");
@@ -90,6 +98,10 @@ tarOutput.on("close", () => {
 
 tarArchive.pipe(tarOutput);
 tarArchive.directory(outDir, false);
+tarArchive.file(`${rootDir}/LICENSE.md`, {
+  cwd: __dirname,
+  name: "LICENSE.md",
+});
 
 zipArchive.finalize();
 tarArchive.finalize();
