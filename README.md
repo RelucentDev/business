@@ -29,10 +29,7 @@ from early testing to general availability.
 
 ## Branding & Press Kit
 
-Branding and press kit - logos and cover images.
-
-- **/resources:** Design and source files - Figma branding guidelines.
-- **/packages/logos:** Raw source files - Logo files (PNG, JPEG, GIF).
+Logo files are attached to our GitHub releases.
 
 > See [latest release](https://github.com/Relucent-Software/business/releases/latest)
 
