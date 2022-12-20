@@ -10,12 +10,10 @@ and websites that follow the Relucent brand.
 In your tailwind config file:
 
 ```js
-const tailwindcssPreset = require('@relucent-software/tailwindcss-preset');
-
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   presets: [
-    tailwindcssPreset,
+    require('@relucent-software/tailwindcss-preset'),
   ],
   // ...
 };
