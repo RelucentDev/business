@@ -1,4 +1,4 @@
-name: Release Tag node-version:
+name: Release Tag
 on:
   push:
     tags:
