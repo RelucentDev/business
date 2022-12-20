@@ -7,31 +7,29 @@
  * @since     1.0.0
  */
 
-const { merge } = require('webpack-merge');
-const path = require('path');
-const common = require('../../webpack.common');
+const { merge } = require("webpack-merge");
+const path = require("path");
+const common = require("../../webpack.common");
 
-module.exports = (env) => merge(
-  common(env),
-  {
-    target: 'node',
-    entry: './src/index.ts',
+module.exports = (env) =>
+  merge(common(env), {
+    target: "node",
+    entry: "./src/index.ts",
     output: {
-      filename: 'index.js',
-      path: path.resolve(__dirname, 'dist'),
+      filename: "index.js",
+      path: path.resolve(__dirname, "dist"),
       clean: true,
-      library: 'colors',
+      library: "colors",
       umdNamedDefine: true,
-      libraryTarget: 'umd',
+      libraryTarget: "umd",
     },
     module: {
       rules: [
         {
           test: /\.tsx?$/,
-          use: 'ts-loader',
+          use: "ts-loader",
           exclude: /node_modules/,
         },
       ],
     },
-  }
-);
+  });
