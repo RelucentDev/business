@@ -95,7 +95,10 @@ npx lerna version
 
 ## License
 
-Creative Commons &copy; 2022 Relucent Ltd.
+**In this repository**:
+
+- Logos: CC-BY-4.0 &copy; 2022 Relucent Ltd ([See License](./packages/logos/LICENSE.md))
+- Source Code: MIT License &copy; 2022 Relucent Ltd ([See License](./LICENSE.md))
 
 ### Contact
 
