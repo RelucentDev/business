@@ -1,5 +1,8 @@
 name: Lint Source Code
-on: [push]
+on:
+  push:
+    paths:
+      - packages/**
 permissions:
   contents: read
   packages: read
