@@ -103,4 +103,4 @@ Proprietary &copy; 2022 Relucent Ltd.
 
 **Project Manager**: Dom Webber <dom.webber@hotmail.com>
 
-> See [Acknowlegements](ACKNOWLEDGEMENTS.md)
+> See [Acknowledgements](ACKNOWLEDGEMENTS.md)
