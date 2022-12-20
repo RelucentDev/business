@@ -6,9 +6,7 @@
     "packages/*"
   ],
   "main": "index.js",
-  "scripts": {
-    "test": "npm-run-all test:*"
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Relucent-Software/business.git"

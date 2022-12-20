@@ -1,20 +1,28 @@
-const { merge } = require('webpack-merge');
-const path = require('path');
-const common = require('../../webpack.common');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+/**
+ * Relucent Accreditation.
+ *
+ * @package   Relucent\Accreditation\React
+ * @license   Proprietary
+ * @copyright 2022 Relucent Ltd
+ * @link      https://relucent.dev
+ * @since     1.0.0
+ */
 
-module.exports = (env) => merge(
-  common(env),
-  {
-    target: 'node',
-    entry: './src/index.tsx',
+const { merge } = require("webpack-merge");
+const path = require("path");
+const common = require("../../webpack.common");
+
+module.exports = (env) =>
+  merge(common(env), {
+    target: "node",
+    entry: "./src/index.tsx",
     output: {
-      filename: 'index.js',
-      path: path.resolve(__dirname, 'dist'),
+      filename: "index.js",
+      path: path.resolve(__dirname, "dist"),
       clean: true,
-      library: 'colors',
+      library: "colors",
       umdNamedDefine: true,
-      libraryTarget: 'umd',
+      libraryTarget: "umd",
     },
     module: {
       rules: [
@@ -22,8 +30,7 @@ module.exports = (env) => merge(
           test: /\.(tsx|jsx|ts|js)?$/,
           use: "babel-loader",
           exclude: /node_modules/,
-        }
+        },
       ],
-    }
-  },
-);
+    },
+  });

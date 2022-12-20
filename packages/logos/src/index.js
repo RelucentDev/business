@@ -1,6 +1,17 @@
+/**
+ * Relucent Logos Package.
+ *
+ * @package   Relucent\Logos
+ * @license   Proprietary
+ * @copyright 2022 Relucent Ltd
+ * @link      https://relucent.dev
+ * @since     1.0.0
+ */
+
 const path = require("path");
 const fs = require("fs-extra");
 const sharp = require("sharp");
+const archiver = require("archiver");
 
 const srcDir = path.resolve(__dirname);
 const outDir = path.resolve(__dirname, "..", "dist");
@@ -54,3 +65,31 @@ fs.readdirSync(srcDir).forEach((file) => {
       .catch((err) => console.error(err));
   });
 });
+
+// Zip Dist Files
+const zipOutput = fs.createWriteStream("logos.zip");
+const zipArchive = archiver("zip");
+zipOutput.on("close", () => {
+  console.log(`${zipArchive.pointer()} total bytes written to zip`);
+});
+
+zipArchive.pipe(zipOutput);
+zipArchive.directory(outDir, false);
+
+// Tar Dist Files
+const tarOutput = fs.createWriteStream("logos.tar.gz");
+const tarArchive = archiver("tar", {
+  gzip: true,
+  gzipOptions: {
+    level: 1,
+  },
+});
+tarOutput.on("close", () => {
+  console.log(`${tarArchive.pointer()} total bytes written to tar`);
+});
+
+tarArchive.pipe(tarOutput);
+tarArchive.directory(outDir, false);
+
+zipArchive.finalize();
+tarArchive.finalize();

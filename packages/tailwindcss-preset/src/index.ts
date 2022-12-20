@@ -1,3 +1,13 @@
+/**
+ * Relucent TailwindCSS Preset.
+ *
+ * @package   Relucent\TailwindCSSPreset
+ * @license   Proprietary
+ * @copyright 2022 Relucent Ltd
+ * @link      https://relucent.dev
+ * @since     1.0.0
+ */
+
 import colors, { palettes } from "@relucent-software/colors";
 const defaultTheme = require("tailwindcss/defaultTheme");
 

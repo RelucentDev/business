@@ -1,6 +1,6 @@
 {
   "name": "@relucent-software/tailwindcss-preset",
-  "version": "1.1.26",
+  "version": "1.1.40",
   "description": "Relucent Branding TailwindCSS Preset",
   "keywords": [
     "relucent",
@@ -36,7 +36,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@relucent-software/colors": "^1.1.26"
+    "@relucent-software/colors": "^1.1.40"
   },
   "peerDependencies": {
     "tailwindcss": "*"
@@ -49,5 +49,6 @@
     "eslint-plugin-prettier": "^4.2.1",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.8.0"
-  }
+  },
+  "gitHead": "a4f4533c2a1fc6eb8619ba1fa355e73430f74af3"
 }

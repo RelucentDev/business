@@ -1,6 +1,6 @@
 {
   "name": "@relucent-software/logos",
-  "version": "1.1.26",
+  "version": "1.1.40",
   "description": "Logo assets for Relucent, Relucent Ltd",
   "keywords": [
     "relucent",
@@ -41,5 +41,8 @@
     "prettier": "^2.8.0",
     "sharp": "^0.31.1"
   },
-  "gitHead": "c85bf3c39a9313fa51a1fd18debca012721a46d0"
+  "gitHead": "a4f4533c2a1fc6eb8619ba1fa355e73430f74af3",
+  "dependencies": {
+    "archiver": "^5.3.1"
+  }
 }
