@@ -67,15 +67,29 @@ fs.readdirSync(srcDir).forEach((file) => {
 });
 
 // Zip Dist Files
-const output = fs.createWriteStream("dist.zip");
-const archive = archiver("zip");
-
-output.on("close", () => {
-  console.log(`${archive.pointer()} total bytes written to zip`);
+const zipOutput = fs.createWriteStream("logos.zip");
+const zipArchive = archiver("zip");
+zipOutput.on("close", () => {
+  console.log(`${zipArchive.pointer()} total bytes written to zip`);
 });
 
-archive.pipe(output);
+zipArchive.pipe(zipOutput);
+zipArchive.directory(outDir, false);
 
-archive.directory(outDir, false);
+// Tar Dist Files
+const tarOutput = fs.createWriteStream("logos.tar.gz");
+const tarArchive = archiver("tar", {
+  gzip: true,
+  gzipOptions: {
+    level: 1,
+  },
+});
+tarOutput.on("close", () => {
+  console.log(`${tarArchive.pointer()} total bytes written to tar`);
+});
 
-archive.finalize();
+tarArchive.pipe(tarOutput);
+tarArchive.directory(outDir, false);
+
+zipArchive.finalize();
+tarArchive.finalize();

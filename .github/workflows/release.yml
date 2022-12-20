@@ -22,4 +22,6 @@ jobs:
       - uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
         with:
-          files: packages/logos/dist.zip
+          files: |
+            packages/logos/logos.zip
+            packages/logos/logos.tar.gz
