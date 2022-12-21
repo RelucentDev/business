@@ -44,6 +44,6 @@ Logo files are attached to our GitHub releases.
 
 **Relucent Ltd**: <https://relucent.dev> <<hello@relucent.dev>>
 
-**Project Manager**: Dom Webber <dom.webber@hotmail.com>
+**Project Manager**: Dom Webber <<dom.webber@hotmail.com>>
 
 > See [Acknowledgements](ACKNOWLEDGEMENTS.md)
