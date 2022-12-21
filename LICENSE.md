@@ -1,3 +1,5 @@
+Logos included in this repository are [licensed separately](./packages/logos/LICENSE.md).
+
 MIT License
 
 Copyright (c) 2022 Relucent
