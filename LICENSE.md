@@ -1,4 +1,6 @@
-Logos included in this repository are [licensed separately](./packages/logos/LICENSE.md).
+This license applies to all source code, including but not limited to .js files.
+Logo files and assets are licensed separately under CC-BY-4.0 in a separate
+[license file](./packages/logos/LICENSE.md).
 
 MIT License
 

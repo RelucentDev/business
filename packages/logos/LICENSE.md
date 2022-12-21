@@ -1,5 +1,10 @@
 Copyright (c) 2022 Relucent Ltd
 
+This license applies to all logo files in this directory and its
+subdirectories. This includes any .png, .gif, .svg, .webp files.
+Scripts used to generate these files fall under this repository's [main
+license](/LICENSE.md).
+
 Attribution-ShareAlike 4.0 International
 
 =======================================================================
