@@ -6,8 +6,7 @@ body:
     attributes:
       value: |
         Thanks for taking the time to fill out this bug report!
-        Please do not submit issues relating to critical security vulnerabilities
-        in accordance with our [Security Policy](/SECURITY.md).
+        Please do not submit issues relating to critical security vulnerabilities in accordance with our [Security Policy](/SECURITY.md).
   - type: textarea
     attributes:
       label: Expected Behaviour
