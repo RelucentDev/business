@@ -2,7 +2,7 @@
 name: "Feature Request/Idea 🚀"
 about: "Suggest a new feature or improvement (this doesn't mean that you have to implement it)"
 title: ""
-labels: "feature"
+labels: "enhancement"
 assignees: ""
 ---
 
