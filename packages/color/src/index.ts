@@ -2,102 +2,49 @@
 /**
  * Relucent Colors.
  *
- * @package   Relucent\Colors
- * @copyright 2022 Relucent Ltd
- * @link      https://relucent.dev
  * @since     1.0.0
+ * @module    Relucent\Colors
+ * @copyright 2023 Relucent Ltd
+ * @author    Relucent Ltd <hello@relucent.dev>
+ * @author    Dom Webber <dom.webber@hotmail.com>
+ * @see       https://relucent.dev
  */
 
-import chroma from "chroma-js";
+import global from "./global";
+import brand from "./brand";
+import semantic from "./semantic";
+import * as chart from "./chart";
 
-const colorSamplePoints = [50, 100, 200, 300, 400, 500, 600, 700, 800, 900];
-
-function scaleToSamplePoints(scale: chroma.Scale, samplePoints: number[]) {
-  const samples: {
-    [key: string]: string;
-  } = {};
-
-  samplePoints.forEach((samplePoint) => {
-    samples[samplePoint] = scale(samplePoint).hex();
-  });
-
-  return samples;
-}
-
-function upDownScaleColor(color: string | number | chroma.Color) {
-  const colorChroma = chroma(color);
-  return [colorChroma.darken(4), colorChroma, colorChroma.brighten(5)];
-}
-
-const defaultDomain = [1000, 500, 0];
-
-const functionalScales = {
-  blue: chroma.scale(upDownScaleColor("#3083DC")).domain(defaultDomain),
-  purple: chroma
-    .scale(upDownScaleColor("#8C63AF")) // #9368B7 #8C63AF #855EA6 #765395
-    .domain(defaultDomain),
-  yellow: chroma.scale(upDownScaleColor("#FFBF00")).domain(defaultDomain),
-  red: chroma.scale(upDownScaleColor("#FC440F")).domain(defaultDomain),
-  green: chroma.scale(upDownScaleColor("#40C9A2")).domain(defaultDomain),
-  teal: chroma.scale(upDownScaleColor("#00B8D9")).domain(defaultDomain),
-  neutral: chroma.scale(["#10132A", "#FFFFFF"]).domain([900, 0]),
+/**
+ * Primary Colour Palette.
+ * These are the main brand colours for Relucent. These colours should be
+ * extracted from the base/descriptive colour palette.
+ *
+ * @since 2.0.0
+ * @author Dom Webber <dom.webber@hotmail.com>
+ */
+const primary = {
+  blue: "#1d4f94",
+  dark: "#10132a",
+  light: "#ffffff",
 };
 
-const colors = {
-  blue: {
-    ...scaleToSamplePoints(functionalScales.blue, colorSamplePoints),
-    DEFAULT: functionalScales.blue(700).hex(),
-  },
-  purple: {
-    ...scaleToSamplePoints(functionalScales.purple, colorSamplePoints),
-    DEFAULT: functionalScales.purple(500).hex(),
-  },
-  yellow: {
-    ...scaleToSamplePoints(functionalScales.yellow, colorSamplePoints),
-    DEFAULT: functionalScales.yellow(500).hex(),
-  },
-  red: {
-    ...scaleToSamplePoints(functionalScales.red, colorSamplePoints),
-    DEFAULT: functionalScales.red(500).hex(),
-  },
-  green: {
-    ...scaleToSamplePoints(functionalScales.green, colorSamplePoints),
-    DEFAULT: functionalScales.green(500).hex(),
-  },
-  teal: {
-    ...scaleToSamplePoints(functionalScales.teal, colorSamplePoints),
-    DEFAULT: functionalScales.teal(500).hex(),
-  },
-  neutralDark: {
-    ...scaleToSamplePoints(functionalScales.neutral, [900, 800, 700, 600, 500]),
-    DEFAULT: functionalScales.neutral(900).hex(),
-  },
-  neutralMid: {
-    ...scaleToSamplePoints(
-      functionalScales.neutral,
-      [400, 300, 200, 100, 90, 80, 70, 60]
-    ),
-  },
-  neutralLight: {
-    ...scaleToSamplePoints(functionalScales.neutral, [50, 40, 30, 20, 10, 0]),
-    DEFAULT: functionalScales.neutral(0).hex(),
-  },
+/**
+ * Secondary Colour Palette.
+ * These are the secondary brand colours for Relucent. These colours should be
+ * harmonious with the primary palette.
+ *
+ * @since 2.0.0
+ * @author Dom Webber <dom.webber@hotmail.com>
+ */
+const secondary = {
+  red: "#fc440f",
+  yellow: "#ffbf00",
+  green: "#40c9a2",
+  neutral: "",
+  teal: "#00b8d9",
+  purple: "#8c63af",
 };
 
-const palettes = {
-  primary: {
-    blue: colors.blue.DEFAULT,
-    dark: colors.neutralDark.DEFAULT,
-    light: colors.neutralLight.DEFAULT,
-  },
-  secondary: {
-    red: colors.red.DEFAULT,
-    yellow: colors.yellow.DEFAULT,
-    green: colors.green.DEFAULT,
-    teal: colors.teal.DEFAULT,
-    purple: colors.purple.DEFAULT,
-  },
-};
-
-export default colors;
-export { palettes };
+export default global;
+export { chart, brand, semantic };

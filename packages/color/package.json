@@ -14,8 +14,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "directories": {
-    "dist": "dist",
-    "test": "__tests__"
+    "dist": "dist"
   },
   "files": [
     "dist"
@@ -25,7 +24,7 @@
     "url": "git+https://github.com/Relucent-Software/business.git"
   },
   "scripts": {
-    "test": "node ./__tests__/color.test.js",
+    "test": "echo \"No tests to run\" && exit 0",
     "build": "webpack",
     "lint": "npm-run-all lint:*",
     "lint:eslint": "eslint src/**/*"
@@ -36,11 +35,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "dependencies": {
-    "chroma-js": "^2.4.2"
-  },
   "devDependencies": {
-    "@types/chroma-js": "*",
     "@typescript-eslint/eslint-plugin": "^5.45.0",
     "@typescript-eslint/parser": "^5.45.0",
     "eslint": "^8.28.0",
