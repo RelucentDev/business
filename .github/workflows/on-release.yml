@@ -1,6 +1,7 @@
 name: On Release
 on:
   release:
+    types: [released, prereleased]
 jobs:
   publish:
     runs-on: ubuntu-latest
