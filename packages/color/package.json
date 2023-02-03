@@ -27,7 +27,7 @@
     "test": "echo \"No tests to run\" && exit 0",
     "build": "webpack",
     "lint": "npm-run-all lint:*",
-    "lint:eslint": "eslint src/**/*"
+    "lint:eslint": "eslint src/**/* --fix"
   },
   "bugs": {
     "url": "https://github.com/Relucent-Software/business/issues"

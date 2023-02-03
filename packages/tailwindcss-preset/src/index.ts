@@ -9,6 +9,7 @@
  */
 
 import { core, semantic } from "@relucent-software/colors";
+import type { Config } from "tailwindcss";
 const defaultTheme = require("tailwindcss/defaultTheme");
 
 /**
@@ -17,10 +18,10 @@ const defaultTheme = require("tailwindcss/defaultTheme");
  * TailwindCSS system.
  *
  * @since 1.0.0
- * @author Dom Webber <dom.webber@hotmail.com>
+ * @author Dom Webber <dom.webber@hotmail.com
  * @see https://tailwindcss.com/
  */
-const tailwindPreset = {
+const tailwindPreset: Omit<Config, "content"> = {
   theme: {
     /**
      * See {@link https://www.uxtoast.com/design-tips/5-tips-for-perfect-typography} for more typography details.

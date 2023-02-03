@@ -32,7 +32,7 @@
     "postbuild": "tsc",
     "lint": "npm-run-all lint:*",
     "lint:typecheck": "tsc",
-    "lint:eslint": "eslint src/**/*"
+    "lint:eslint": "eslint src/**/* --fix"
   },
   "bugs": {
     "url": "https://github.com/Relucent-Software/business/issues"
