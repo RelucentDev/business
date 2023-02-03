@@ -74,7 +74,7 @@ const core = {
    * - Neutral Light #ffffff (white).
    *
    */
-  white: "hsl(0 0 0 / <alpha-value>)",
+  white: "hsl(0deg 0% 0% / <alpha-value>)",
 
   /**
    * *"Black".*
@@ -82,26 +82,26 @@ const core = {
    *
    * @see core.blue[10];
    */
-  black: "hsl(214 84 5 / <alpha-value>)",
+  black: "hsl(214deg 84 5 / <alpha-value>)",
 
   /**
    * Red.
    * Based on #D84231.
    */
   red: {
-    10: "hsl(6 68 12 / <alpha-value>)",
-    20: "hsl(6 68 22 / <alpha-value>)",
-    30: "hsl(6 68 32 / <alpha-value>)",
+    10: "hsl(6deg 68% 12% / <alpha-value>)",
+    20: "hsl(6deg 68% 22% / <alpha-value>)",
+    30: "hsl(6deg 68% 32% / <alpha-value>)",
 
     /**
      * Negative Red.
      */
-    40: "hsl(6 68 42 / <alpha-value>)",
-    50: "hsl(6 68 52 / <alpha-value>)",
-    60: "hsl(6 68 62 / <alpha-value>)",
-    70: "hsl(6 68 72 / <alpha-value>)",
-    80: "hsl(6 68 82 / <alpha-value>)",
-    90: "hsl(6 68 92 / <alpha-value>)",
+    40: "hsl(6deg 68% 42% / <alpha-value>)",
+    50: "hsl(6deg 68% 52% / <alpha-value>)",
+    60: "hsl(6deg 68% 62% / <alpha-value>)",
+    70: "hsl(6deg 68% 72% / <alpha-value>)",
+    80: "hsl(6deg 68% 82% / <alpha-value>)",
+    90: "hsl(6deg 68% 92% / <alpha-value>)",
   },
 
   /**
@@ -109,19 +109,19 @@ const core = {
    * Based on #FF7214.
    */
   orange: {
-    10: "hsl(24 100 14 / <alpha-value>)",
-    20: "hsl(24 100 24 / <alpha-value>)",
-    30: "hsl(24 100 34 / <alpha-value>)",
+    10: "hsl(24deg 100% 14% / <alpha-value>)",
+    20: "hsl(24deg 100% 24% / <alpha-value>)",
+    30: "hsl(24deg 100% 34% / <alpha-value>)",
 
     /**
      * Severe Orange.
      */
-    40: "hsl(24 100 44 / <alpha-value>)",
-    50: "hsl(24 100 54 / <alpha-value>)",
-    60: "hsl(24 100 64 / <alpha-value>)",
-    70: "hsl(24 100 74 / <alpha-value>)",
-    80: "hsl(24 100 84 / <alpha-value>)",
-    90: "hsl(24 100 94 / <alpha-value>)",
+    40: "hsl(24deg 100% 44% / <alpha-value>)",
+    50: "hsl(24deg 100% 54% / <alpha-value>)",
+    60: "hsl(24deg 100% 64% / <alpha-value>)",
+    70: "hsl(24deg 100% 74% / <alpha-value>)",
+    80: "hsl(24deg 100% 84% / <alpha-value>)",
+    90: "hsl(24deg 100% 94% / <alpha-value>)",
   },
 
   /**
@@ -129,19 +129,19 @@ const core = {
    * Based on #DFC416.
    */
   yellow: {
-    10: "hsl(52 82 8 / <alpha-value>)",
-    20: "hsl(52 82 18 / <alpha-value>)",
-    30: "hsl(52 82 28 / <alpha-value>)",
+    10: "hsl(52deg 82% 8% / <alpha-value>)",
+    20: "hsl(52deg 82% 18% / <alpha-value>)",
+    30: "hsl(52deg 82% 28% / <alpha-value>)",
 
     /**
      * Warning Yellow.
      */
-    40: "hsl(52 82 38 / <alpha-value>)",
-    50: "hsl(52 82 48 / <alpha-value>)",
-    60: "hsl(52 82 58 / <alpha-value>)",
-    70: "hsl(52 82 68 / <alpha-value>)",
-    80: "hsl(52 82 78 / <alpha-value>)",
-    90: "hsl(52 82 88 / <alpha-value>)",
+    40: "hsl(52deg 82% 38% / <alpha-value>)",
+    50: "hsl(52deg 82% 48% / <alpha-value>)",
+    60: "hsl(52deg 82% 58% / <alpha-value>)",
+    70: "hsl(52deg 82% 68% / <alpha-value>)",
+    80: "hsl(52deg 82% 78% / <alpha-value>)",
+    90: "hsl(52deg 82% 88% / <alpha-value>)",
   },
 
   /**
@@ -149,19 +149,19 @@ const core = {
    * Based on #51B358.
    */
   green: {
-    10: "hsl(124 39 11 / <alpha-value>)",
-    20: "hsl(124 39 21 / <alpha-value>)",
-    30: "hsl(124 39 31 / <alpha-value>)",
+    10: "hsl(124deg 39% 11% / <alpha-value>)",
+    20: "hsl(124deg 39% 21% / <alpha-value>)",
+    30: "hsl(124deg 39% 31% / <alpha-value>)",
 
     /**
      * Positive Green.
      */
-    40: "hsl(124 39 41 / <alpha-value>)",
-    50: "hsl(124 39 51 / <alpha-value>)",
-    60: "hsl(124 39 61 / <alpha-value>)",
-    70: "hsl(124 39 71 / <alpha-value>)",
-    80: "hsl(124 39 81 / <alpha-value>)",
-    90: "hsl(124 39 91 / <alpha-value>)",
+    40: "hsl(124deg 39% 41% / <alpha-value>)",
+    50: "hsl(124deg 39% 51% / <alpha-value>)",
+    60: "hsl(124deg 39% 61% / <alpha-value>)",
+    70: "hsl(124deg 39% 71% / <alpha-value>)",
+    80: "hsl(124deg 39% 81% / <alpha-value>)",
+    90: "hsl(124deg 39% 91% / <alpha-value>)",
   },
 
   /**
@@ -172,23 +172,23 @@ const core = {
     /**
      * Black, Neutral Dark, Neutral Dark Muted (with opacity), Neutral Dark Subtle (with opacity).
      */
-    10: "hsl(214 82 5 / <alpha-value>)",
+    10: "hsl(214deg 82% 5% / <alpha-value>)",
 
     /**
      * Primary Blue.
      */
-    20: "hsl(214 82 15 / <alpha-value>)",
-    30: "hsl(214 82 25 / <alpha-value>)",
-    40: "hsl(214 82 35 / <alpha-value>)",
-    50: "hsl(214 82 45 / <alpha-value>)",
+    20: "hsl(214deg 82% 15% / <alpha-value>)",
+    30: "hsl(214deg 82% 25% / <alpha-value>)",
+    40: "hsl(214deg 82% 35% / <alpha-value>)",
+    50: "hsl(214deg 82% 45% / <alpha-value>)",
 
     /**
      * Secondary Blue, Action Blue.
      */
-    60: "hsl(214 82 55 / <alpha-value>)",
-    70: "hsl(214 82 65 / <alpha-value>)",
-    80: "hsl(214 82 75 / <alpha-value>)",
-    90: "hsl(214 82 85 / <alpha-value>)",
+    60: "hsl(214deg 82% 55% / <alpha-value>)",
+    70: "hsl(214deg 82% 65% / <alpha-value>)",
+    80: "hsl(214deg 82% 75% / <alpha-value>)",
+    90: "hsl(214deg 82% 85% / <alpha-value>)",
   },
 
   /**
@@ -196,19 +196,19 @@ const core = {
    * Based on #690BE5.
    */
   violet: {
-    10: "hsl(266 91 7 / <alpha-value>)",
-    20: "hsl(266 91 17 / <alpha-value>)",
-    30: "hsl(266 91 27 / <alpha-value>)",
+    10: "hsl(266deg 91% 7% / <alpha-value>)",
+    20: "hsl(266deg 91% 17% / <alpha-value>)",
+    30: "hsl(266deg 91% 27% / <alpha-value>)",
 
     /**
      * Discovery Violet.
      */
-    40: "hsl(266 91 37 / <alpha-value>)",
-    50: "hsl(266 91 47 / <alpha-value>)",
-    60: "hsl(266 91 57 / <alpha-value>)",
-    70: "hsl(266 91 67 / <alpha-value>)",
-    80: "hsl(266 91 77 / <alpha-value>)",
-    90: "hsl(266 91 87 / <alpha-value>)",
+    40: "hsl(266deg 91% 37% / <alpha-value>)",
+    50: "hsl(266deg 91% 47% / <alpha-value>)",
+    60: "hsl(266deg 91% 57% / <alpha-value>)",
+    70: "hsl(266deg 91% 67% / <alpha-value>)",
+    80: "hsl(266deg 91% 77% / <alpha-value>)",
+    90: "hsl(266deg 91% 87% / <alpha-value>)",
   },
 
   /**
@@ -216,23 +216,23 @@ const core = {
    * Based on #726D97.
    */
   gray: {
-    10: "hsl(247 17 11 / <alpha-value>)",
-    20: "hsl(247 17 21 / <alpha-value>)",
-    30: "hsl(247 17 31 / <alpha-value>)",
-    40: "hsl(247 17 41 / <alpha-value>)",
+    10: "hsl(247deg 17% 11% / <alpha-value>)",
+    20: "hsl(247deg 17% 21% / <alpha-value>)",
+    30: "hsl(247deg 17% 31% / <alpha-value>)",
+    40: "hsl(247deg 17% 41% / <alpha-value>)",
 
     /**
      * Neutral, Neutral Muted (with opacity), Neutral Subtle (with opacity).
      */
-    50: "hsl(247 17 51 / <alpha-value>)",
-    60: "hsl(247 17 61 / <alpha-value>)",
-    70: "hsl(247 17 71 / <alpha-value>)",
+    50: "hsl(247deg 17% 51% / <alpha-value>)",
+    60: "hsl(247deg 17% 61% / <alpha-value>)",
+    70: "hsl(247deg 17% 71% / <alpha-value>)",
 
     /**
      * Neutral Light Muted (with opacity), Neutral Light Subtle (with opacity).
      */
-    80: "hsl(247 17 81 / <alpha-value>)",
-    90: "hsl(247 17 91 / <alpha-value>)",
+    80: "hsl(247deg 17% 81% / <alpha-value>)",
+    90: "hsl(247deg 17% 91% / <alpha-value>)",
   },
 };
 
