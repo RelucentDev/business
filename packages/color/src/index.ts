@@ -353,13 +353,13 @@ const semantic = {
        * Neutral Dark Muted.
        * ```semantic-neutral-dark-muted```
        */
-      muted: core["black"].replace("<alpha-value>", "0.5"),
+      muted: core["black"].replace("<alpha-value>", "0.85"),
 
       /**
        * Neutral Dark Subtle.
        * ```semantic-neutral-dark-subtle```
        */
-      subtle: core["black"].replace("<alpha-value>", "0.4"),
+      subtle: core["black"].replace("<alpha-value>", "0.75"),
     },
   },
 
