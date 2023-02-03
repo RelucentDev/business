@@ -504,31 +504,38 @@ const semantic = {
     },
 
     /**
+     * Action foreground colour.
+     * This colour should be used for interactive text or icons like links or
+     * buttons.
+     */
+    action: core["blue"][30].replace("<alpha-value>", "1"),
+
+    /**
      * Positive foreground colour.
      * This colour should be used to emphasise a positive or successful message.
      */
-    positive: core["green"][40].replace("<alpha-value>", "1"),
+    positive: core["green"][20].replace("<alpha-value>", "1"),
 
     /**
      * Warning foreground colour.
      * This colour should be used to highlight text or icons that require the
      * user's attention - this doesn't guarantee that action needs to be taken.
      */
-    warning: core["yellow"][40].replace("<alpha-value>", "1"),
+    warning: core["yellow"][20].replace("<alpha-value>", "1"),
 
     /**
      * Severe foreground colour.
      * This colour should be used to emphasise a level of severity between
      * warning and negative.
      */
-    severe: core["orange"][40].replace("<alpha-value>", "1"),
+    severe: core["orange"][20].replace("<alpha-value>", "1"),
 
     /**
      * Negative foreground colour.
      * This colour should be used to emphasise an error or blocking state
      * wherein action is required.
      */
-    negative: core["red"][40].replace("<alpha-value>", "1"),
+    negative: core["red"][30].replace("<alpha-value>", "1"),
 
     /**
      * Discovery foreground colour.
@@ -536,13 +543,6 @@ const semantic = {
      * those relating to "support" or "something new".
      */
     discovery: core["violet"][40].replace("<alpha-value>", "1"),
-
-    /**
-     * Action foreground colour.
-     * This colour should be used for interactive text or icons like links or
-     * buttons.
-     */
-    action: core["blue"][40].replace("<alpha-value>", "1"),
   },
 
   bg: {
