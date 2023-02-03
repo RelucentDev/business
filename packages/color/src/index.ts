@@ -535,7 +535,7 @@ const semantic = {
      * This colour should be used for "discovery" foreground elements, such as
      * those relating to "support" or "something new".
      */
-    discovery: core["purple"][40].replace("<alpha-value>", "1"),
+    discovery: core["violet"][40].replace("<alpha-value>", "1"),
 
     /**
      * Action foreground colour.
@@ -650,9 +650,9 @@ const semantic = {
     },
 
     discovery: {
-      DEFAULT: core["purple"][40].replace("<alpha-value>", "0.4"),
+      DEFAULT: core["violet"][40].replace("<alpha-value>", "0.4"),
 
-      emphasis: core["purple"][40].replace("<alpha-value>", "1"),
+      emphasis: core["violet"][40].replace("<alpha-value>", "1"),
     },
   },
 };
