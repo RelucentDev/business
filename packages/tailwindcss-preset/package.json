@@ -1,6 +1,6 @@
 {
   "name": "@relucent-software/tailwindcss-preset",
-  "version": "2.1.0-alpha.4",
+  "version": "2.1.0-alpha.5",
   "description": "Relucent Branding TailwindCSS Preset",
   "keywords": [
     "relucent",
@@ -36,7 +36,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@relucent-software/colors": "^2.1.0-alpha.4"
+    "@relucent-software/colors": "^2.1.0-alpha.5"
   },
   "peerDependencies": {
     "tailwindcss": "*"
