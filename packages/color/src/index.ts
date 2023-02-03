@@ -74,7 +74,7 @@ const core = {
    * - Neutral Light #ffffff (white).
    *
    */
-  white: "hsl(0 0% 0% / <alpha-value>)",
+  white: "hsl(0 0% 100% / <alpha-value>)",
 
   /**
    * *"Black".*
