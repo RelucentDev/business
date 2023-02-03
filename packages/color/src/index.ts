@@ -82,7 +82,7 @@ const core = {
    *
    * @see core.blue[10];
    */
-  black: "hsl(214 84% 5% / <alpha-value>)",
+  black: "hsl(214 82% 5% / <alpha-value>)",
 
   /**
    * Red.
