@@ -503,46 +503,88 @@ const semantic = {
       },
     },
 
-    /**
-     * Action foreground colour.
-     * This colour should be used for interactive text or icons like links or
-     * buttons.
-     */
-    action: core["blue"][30].replace("<alpha-value>", "1"),
+    action: {
+      /**
+       * Action foreground colour.
+       * This colour should be used for interactive text or icons like links or
+       * buttons.
+       */
+      DEFAULT: core["blue"][30].replace("<alpha-value>", "1"),
+
+      /**
+       * Action Muted foreground colour.
+       */
+      muted: core["blue"][30].replace("<alpha-value>", "0.85"),
+
+      /**
+       * Action Subtle foreground colour.
+       */
+      subtle: core["blue"][30].replace("<alpha-value>", "0.75"),
+    },
 
     /**
      * Positive foreground colour.
      * This colour should be used to emphasise a positive or successful message.
      */
-    positive: core["green"][20].replace("<alpha-value>", "1"),
+    positive: {
+      DEFAULT: core["green"][20].replace("<alpha-value>", "1"),
+
+      muted: core["green"][20].replace("<alpha-value>", "0.85"),
+
+      subtle: core["green"][20].replace("<alpha-value>", "0.75"),
+    },
 
     /**
      * Warning foreground colour.
      * This colour should be used to highlight text or icons that require the
      * user's attention - this doesn't guarantee that action needs to be taken.
      */
-    warning: core["yellow"][20].replace("<alpha-value>", "1"),
+    warning: {
+      DEFAULT: core["yellow"][20].replace("<alpha-value>", "1"),
+
+      muted: core["yellow"][20].replace("<alpha-value>", "0.85"),
+
+      subtle: core["yellow"][20].replace("<alpha-value>", "0.75"),
+    },
 
     /**
      * Severe foreground colour.
      * This colour should be used to emphasise a level of severity between
      * warning and negative.
      */
-    severe: core["orange"][20].replace("<alpha-value>", "1"),
+    severe: {
+      DEFAULT: core["orange"][20].replace("<alpha-value>", "1"),
+
+      muted: core["yellow"][20].replace("<alpha-value>", "0.85"),
+
+      subtle: core["yellow"][20].replace("<alpha-value>", "0.75"),
+    },
 
     /**
      * Negative foreground colour.
      * This colour should be used to emphasise an error or blocking state
      * wherein action is required.
      */
-    negative: core["red"][30].replace("<alpha-value>", "1"),
+    negative: {
+      DEFAULT: core["red"][30].replace("<alpha-value>", "1"),
+
+      muted: core["red"][30].replace("<alpha-value>", "0.85"),
+
+      subtle: core["red"][30].replace("<alpha-value>", "0.75"),
+    },
 
     /**
      * Discovery foreground colour.
      * This colour should be used for "discovery" foreground elements, such as
      * those relating to "support" or "something new".
      */
-    discovery: core["violet"][40].replace("<alpha-value>", "1"),
+    discovery: {
+      DEFAULT: core["violet"][40].replace("<alpha-value>", "1"),
+
+      muted: core["violet"][40].replace("<alpha-value>", "0.85"),
+
+      subtle: core["violet"][40].replace("<alpha-value>", "0.75"),
+    },
   },
 
   bg: {
