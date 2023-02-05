@@ -24,6 +24,3 @@ jobs:
           files: |
             packages/logos/logos.zip
             packages/logos/logos.tar.gz
-      - run: npx lerna publish from-git --no-private --yes
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
