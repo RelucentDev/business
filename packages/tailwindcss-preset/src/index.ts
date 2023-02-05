@@ -8,8 +8,8 @@
  * @since     1.0.0
  */
 
-import { core, semantic } from "@relucent-software/colors";
 import type { Config } from "tailwindcss";
+import { core, semantic } from "./color";
 const defaultTheme = require("tailwindcss/defaultTheme");
 
 /**
