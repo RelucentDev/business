@@ -20,18 +20,6 @@ Add the following to a ```.npmrc``` file.
 npm install @relucent-software/logos
 ```
 
-### Colors - @relucent-software/colors (private)
-
-```bash
-npm install @relucent-software/colors
-```
-
-### TailwindCSS Preset - @relucent-software/tailwindcss-preset (private)
-
-```bash
-npm install @relucent-software/tailwindcss-preset
-```
-
 ### React Accreditation - @relucent-software/accreditation-react (private)
 
 ```bash
