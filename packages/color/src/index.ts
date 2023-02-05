@@ -634,7 +634,7 @@ const semantic = {
     warning: {
       DEFAULT: core["yellow"][40].replace("<alpha-value>", "0.2"),
 
-      emphasis: core["yellow"][50].replace("<alpha-value>", "1"),
+      emphasis: core["yellow"][40].replace("<alpha-value>", "1"),
     },
 
     severe: {
